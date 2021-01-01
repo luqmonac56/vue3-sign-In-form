@@ -1,6 +1,9 @@
 <template>
   <div id="app">
-    <my-input/>
+    <my-input
+      name="Username"
+      :rules = "{ required: true, min: 5 }"
+    />
    <my-button  
    color="white" 
     background= "darkslateblue"
@@ -25,7 +28,10 @@ export default {
 }
 </script>
 
-<style scoped>
+<style>
 
+body{
+  font-family: arial;
+}
 
 </style>
